@@ -1,0 +1,41 @@
+<div class="container leilao-cadastro-container">
+    <form #leilaoForm="ngForm" (ngSubmit)="submitForm()">
+        <div class="form-group">
+            <label for="nome">Leilão</label>
+            <input type="text" [(ngModel)]="leilao.nome" name="nome" class="form-control" id="nome" 
+                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="form-group">
+            <label for="responsavelPeloLeilao">Responsável</label>
+            <input type="text" [(ngModel)]="leilao.responsavelPeloLeilao" name="responsavelPeloLeilao" class="form-control" id="responsavelPeloLeilao" 
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="form-group">
+            <label for="valorInicial">Valor Inicial</label>
+            <input type="number" [(ngModel)]="leilao.valorInicial" name="valorInicial" class="form-control" id="valorInicial" 
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-sm">
+                <label for="dataAbertura">Data de Abertura</label>
+                <input type="date" [(ngModel)]="leilao.dataAbertura" name="dataAbertura" class="form-control" id="dataAbertura" 
+                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="form-group col-sm">
+                <label for="dataFinalizacao">Data de Finalização</label>
+                <input type="date" [(ngModel)]="leilao.dataFinalizacao" name="dataFinalizacao" class="form-control" id="dataAbertura" 
+                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+        </div>
+
+        <div class="form-group form-check">
+            <input type="checkbox" [(ngModel)]="leilao.itemUsado" name="itemUsado" class="form-check-input" id="itemUsado">
+            <label class="form-check-label" for="itemUsado">Item Usado?</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="submited">Cadastrar</button>
+    </form>
+</div>

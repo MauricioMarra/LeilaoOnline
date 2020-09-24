@@ -1,0 +1,36 @@
+<div class="container leilao-container" *ngFor='let item of itemLeilao'>
+    <form>
+        <div class="form-group">
+            <label for="nomeLeilao">Leilão</label>
+            <input type="text" disabled="true" class="form-control" id="nomeLeilao" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value={{item.nome}}>
+        </div>
+
+        <div class="form-group">
+            <label for="responsavelPeloLeilao">Responsável</label>
+            <input type="text" disabled="true" class="form-control" id="responsavelPeloLeilao" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value={{item.responsavelPeloLeilao}}>
+        </div>
+
+        <div class="form-group">
+            <label for="valorInicial">Valor Inicial</label>
+            <input type="number" disabled="true" class="form-control" id="valorInicial" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value={{item.valorInicial}}>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-sm">
+                <label for="dataAbertura">Data de Abertura</label>
+                <input type="datetime" disabled="true" class="form-control" id="dataAbertura" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value={{item.dataAbertura}}>
+            </div>
+            <div class="form-group col-sm">
+                <label for="dataFinalizacao">Data de Finalização</label>
+                <input type="datetime" disabled="true" class="form-control" id="dataAbertura" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value={{item.dataAbertura}}>
+            </div>
+        </div>
+
+        <div class="form-group form-check">
+            <input type="checkbox" disabled="true" class="form-check-input" id="itemUsado" [checked]="item.idcItemUsado">
+            <label class="form-check-label" for="itemUsado">Item Usado?</label>
+        </div>
+
+        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+    </form>
+</div>
