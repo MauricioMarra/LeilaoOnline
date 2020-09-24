@@ -1,0 +1,67 @@
+[???]
+*****
+Injeção de dependência
+Scaffolding (scaffold)
+nameof (evitar hard-coding de um nome de ação, na chamada de uma função?)
+DTO - Objeto de Transferência de Dados
+CORS
+HTML TAG: NAME VS. ID (FORMS?)
+
+
+Alura para suporte:
+*******************
+Fetch API: Consumindo uma API Rest com JavaScript
+APIs Rest com Asp.NET Core 2.1
+
+
+Tutorial Criação de API .NET
+****************************
+https://docs.microsoft.com/pt-br/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio
+
+
+Angular
+*******
+Consultar: https://cli.angular.io/
+Alura, Angular Parte 1
+Utilizar Node versão 8
+npm install -g @angular/cli@6.0.7
+	-g: instalar globalmente (quer dizer que de qualquer diretorio eu poderei executar os comandos do angular cli).
+ng new LeilaoOnlineWeb
+na pasta do projeto: ng serve --open
+	Sobe um servidor node e abre o projeto no navegador
+	
+
+NPM Install - Erro no pacote da Alura
+*************************************
+Usar o comando para ignorar o erro do sqlite3:
+npm install --unsafe-perm sqlite3
+
+
+ANGULAR HINTS
+*************************************
+Rename symbol: Opção de trocar uma propriedade definida em uma interface (por exemplo), trocando todos membros que usem a mesma.
+Convenção: usar aspas simples nas importações (convenção javascript). [VSCode -> File > Preferences > Settings... procurar por quoteStyle e escolher single]
+Creating/Posting FORMS:
+https://www.positronx.io/how-to-use-angular-8-httpclient-to-post-formdata/#:~:text=Define%20the%20name%20and%20avatar,Forms%20form%20(FormGroup)%20object.&text=Next%2C%20make%20the%20HTTP%20POST,formData%20in%20the%20second%20argument.
+https://angular.io/guide/forms
+
+
+Gerar Módulos Usando CLI
+************************
+ng generate component photos/photo-list
+Gera dentro do caminho acima, e nomeia os arquivos .html, .css e .ts, usando o nome photo-list
+
+
+Angular Blocked by CORS
+***********************
+https://stackoverflow.com/questions/56328474/origin-http-localhost4200-has-been-blocked-by-cors-policy-in-angular7/56328611
+
+
+CSS HINTS
+*********
+https://stackoverflow.com/questions/27539262/whats-the-difference-between-align-content-and-align-items
+
+
+PENDENCIAS
+**********
+[] ID ao cadastrar
